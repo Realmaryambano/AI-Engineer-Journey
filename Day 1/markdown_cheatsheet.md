@@ -92,3 +92,33 @@ all serve same purpose
 
 we can use either 1 or 1 2 3 for numbered list
 
+# 7. Adding lines
+
+page 1
+
+---
+
+page 2
+
+---
+
+page 3
+***
+
+page 4
+you can eith use 3 _ or 3 * or 3 -
+
+# 8. links and hyperlinks
+https://www.youtube.com/watch?v=qJqAXjz-Rh4
+
+or 
+
+<https://www.youtube.com/watch?v=qJqAXjz-Rh4>
+
+putting it in simple <>
+
+or for showing text
+
+[This is the playlist of youtube channel](https://www.youtube.com/watch?v=qJqAXjz-Rh4)
+
+simple [] first write text in square bracket that you want to display. then simply add link is round brackets()
