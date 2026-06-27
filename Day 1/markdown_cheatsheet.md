@@ -130,3 +130,16 @@ simple [] first write text in square bracket that you want to display. then simp
 You can learn the markdown language from [here][hello].
 
 
+# 9. Images and Figures with links
+simple text displaying image.
+
+[cat](cat.png)
+
+
+![cat](cat.png)
+
+opening online pictures
+
+[cat](https://www.google.com/search?q=cat&rlz=1C1CHBD_en-GBPK1174PK1174&oq=cat&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyEAgEEAAYgwEYsQMYgAQYigUyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyCggIEAAYsQMYgAQyEAgJEC4YgwEYsQMYgAQYigXSAQg0NjI1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#sv=CAMSaxoyKhBlLVFaRHRGRDNnYnE3LXlNMg5RWkR0RkQzZ2JxNy15TToOQnZ6enkyT09MV202ME0gBCoxChtfd3RnX2F2aW5GdW1wa2RVUDRyZU5pUWdfNTQSEGUtUVpEdEZEM2dicTcteU0YADABGAcg3KyAlQNKCBABGAEgASgB)
+
+![cat](https://www.google.com/search?q=cat&rlz=1C1CHBD_en-GBPK1174PK1174&oq=cat&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyEAgEEAAYgwEYsQMYgAQYigUyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyCggIEAAYsQMYgAQyEAgJEC4YgwEYsQMYgAQYigXSAQg0NjI1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#sv=CAMSaxoyKhBlLVFaRHRGRDNnYnE3LXlNMg5RWkR0RkQzZ2JxNy15TToOQnZ6enkyT09MV202ME0gBCoxChtfd3RnX2F2aW5GdW1wa2RVUDRyZU5pUWdfNTQSEGUtUVpEdEZEM2dicTcteU0YADABGAcg3KyAlQNKCBABGAEgASgB)
