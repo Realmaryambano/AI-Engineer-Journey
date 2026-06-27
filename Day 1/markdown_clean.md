@@ -14,6 +14,10 @@ Purpose: concise, exam- and career-ready reference for Markdown (GFM + common ex
 - Bold: `**text**` or `__text__`.
 - Bold + Italic: `***text***` or `___text___`.
 - Strikethrough: `~~text~~`.
+- I need to highlight these ==very important words==.
+- I need to highlight these <mark>very important words</mark>.
+- Subscript: H~2~O or H<sub>2</sub>O
+- Superscript: 	X^2^ or X<sup>2</sup>
 
 Example:  ~~text~~ **text**
 
@@ -160,4 +164,6 @@ Example inline: $e^{i\pi} + 1 = 0$
 - CommonMark Spec: https://spec.commonmark.org/
 - GitHub Flavored Markdown: https://github.github.com/gfm/
 - KaTeX docs: https://katex.org/
+- Markdown guide: https://www.markdownguide.org/cheat-sheet/
+
 
