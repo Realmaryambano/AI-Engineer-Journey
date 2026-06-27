@@ -143,3 +143,29 @@ opening online pictures
 [cat](https://www.google.com/search?q=cat&rlz=1C1CHBD_en-GBPK1174PK1174&oq=cat&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyEAgEEAAYgwEYsQMYgAQYigUyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyCggIEAAYsQMYgAQyEAgJEC4YgwEYsQMYgAQYigXSAQg0NjI1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#sv=CAMSaxoyKhBlLVFaRHRGRDNnYnE3LXlNMg5RWkR0RkQzZ2JxNy15TToOQnZ6enkyT09MV202ME0gBCoxChtfd3RnX2F2aW5GdW1wa2RVUDRyZU5pUWdfNTQSEGUtUVpEdEZEM2dicTcteU0YADABGAcg3KyAlQNKCBABGAEgASgB)
 
 ![cat](https://www.google.com/search?q=cat&rlz=1C1CHBD_en-GBPK1174PK1174&oq=cat&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyEAgEEAAYgwEYsQMYgAQYigUyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyCggIEAAYsQMYgAQyEAgJEC4YgwEYsQMYgAQYigXSAQg0NjI1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#sv=CAMSaxoyKhBlLVFaRHRGRDNnYnE3LXlNMg5RWkR0RkQzZ2JxNy15TToOQnZ6enkyT09MV202ME0gBCoxChtfd3RnX2F2aW5GdW1wa2RVUDRyZU5pUWdfNTQSEGUtUVpEdEZEM2dicTcteU0YADABGAcg3KyAlQNKCBABGAEgASgB)
+
+# 10. Adding code or code blocks
+To print a string `print("hello")`
+
+`print("hello")`
+
+```
+print("hello")
+print("dog")
+x = 10
+y = 12
+```
+> this code will show color a/c to r language
+``` r
+print("hello")
+print("dog")
+x = 10
+y = 12
+```
+> this code will show color a/c to python language
+``` python
+print("hello")
+print("dog")
+x = 10
+y = 12
+```
