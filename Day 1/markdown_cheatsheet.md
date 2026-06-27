@@ -169,3 +169,55 @@ print("dog")
 x = 10
 y = 12
 ```
+
+# 11. Adding tables
+
+
+| S.no | Name | Age| Rank| Phone Number|
+|------|------|-----|-----|--------------|
+|1|Maryam Bano| 20 | 1st | 0123456789
+|2|Maya| 23 | 5th | 4737363663
+|3|Manahil| 20 | 3rd | 4936289344
+|4|Mirha| 10 | 4th | 0999888777
+|5|Masha| 22 | 2nd | 94047373
+
+> : this is used to left align, right align or center align the table
+
+| S.no | Name | Age| Rank| Phone Number|
+|------:|------:|-----:|-----:|--------------:|
+|1|Maryam Bano| 20 | 1st | 0123456789
+|2|Maya| 23 | 5th | 4737363663
+|3|Manahil| 20 | 3rd | 4936289344
+|4|Mirha| 10 | 4th | 0999888777
+|5|Masha| 22 | 2nd | 94047373
+
+
+| S.no | Name | Age| Rank| Phone Number|
+|:------:|:------:|:-----:|:-----:|:--------------:|
+|1|Maryam Bano| 20 | 1st | 0123456789
+|2|Maya| 23 | 5th | 4737363663
+|3|Manahil| 20 | 3rd | 4936289344
+|4|Mirha| 10 | 4th | 0999888777
+|5|Masha| 22 | 2nd | 94047373
+
+
+# 12. Table of contents
+
+[1. How to give headings in markdown?](#1-how-to-give-headings-in-markdown)
+- [1. How to give headings in markdown?](#1-how-to-give-headings-in-markdown)
+- [Heading 1](#heading-1)
+  - [Heading 2](#heading-2)
+    - [Heading 3](#heading-3)
+      - [Heading 4](#heading-4)
+        - [Heading 5](#heading-5)
+- [2. Line Break](#2-line-break)
+- [3. Block of words](#3-block-of-words)
+- [4. Bold and Italics](#4-bold-and-italics)
+- [5. Comments](#5-comments)
+- [6. Bullets and lists](#6-bullets-and-lists)
+- [7. Adding lines](#7-adding-lines)
+- [8. links and hyperlinks](#8-links-and-hyperlinks)
+- [9. Images and Figures with links](#9-images-and-figures-with-links)
+- [10. Adding code or code blocks](#10-adding-code-or-code-blocks)
+- [11. Adding tables](#11-adding-tables)
+- [12. Table of contents](#12-table-of-contents)
