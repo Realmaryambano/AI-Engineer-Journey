@@ -122,3 +122,11 @@ or for showing text
 [This is the playlist of youtube channel](https://www.youtube.com/watch?v=qJqAXjz-Rh4)
 
 simple [] first write text in square bracket that you want to display. then simply add link is round brackets()
+
+> This is used for giving reference
+
+[hello]: https://www.youtube.com/watch?v=qJqAXjz-Rh4
+
+You can learn the markdown language from [here][hello].
+
+
