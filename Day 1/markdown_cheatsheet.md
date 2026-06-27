@@ -203,21 +203,17 @@ y = 12
 
 # 12. Table of contents
 
-[1. How to give headings in markdown?](#1-how-to-give-headings-in-markdown)
-- [1. How to give headings in markdown?](#1-how-to-give-headings-in-markdown)
-- [Heading 1](#heading-1)
-  - [Heading 2](#heading-2)
-    - [Heading 3](#heading-3)
-      - [Heading 4](#heading-4)
-        - [Heading 5](#heading-5)
-- [2. Line Break](#2-line-break)
-- [3. Block of words](#3-block-of-words)
-- [4. Bold and Italics](#4-bold-and-italics)
-- [5. Comments](#5-comments)
-- [6. Bullets and lists](#6-bullets-and-lists)
-- [7. Adding lines](#7-adding-lines)
-- [8. links and hyperlinks](#8-links-and-hyperlinks)
-- [9. Images and Figures with links](#9-images-and-figures-with-links)
-- [10. Adding code or code blocks](#10-adding-code-or-code-blocks)
-- [11. Adding tables](#11-adding-tables)
-- [12. Table of contents](#12-table-of-contents)
+[1. How to give headings in markdown?](#1-how-to-give-headings-in-markdown)\
+[2. Line Break](#2-line-break)\
+[3. Block of words](#3-block-of-words)\
+[4. Bold and Italics](#4-bold-and-italics)\
+[5. Comments](#5-comments)\
+[6. Bullets and lists](#6-bullets-and-lists)\
+[7. Adding lines](#7-adding-lines)\
+[8. links and hyperlinks](#8-links-and-hyperlinks)\
+[9. Images and Figures with links](#9-images-and-figures-with-links)\
+[10. Adding code or code blocks](#10-adding-code-or-code-blocks)\
+[11. Adding tables](#11-adding-tables)\
+[12. Table of contents](#12-table-of-contents)
+
+
