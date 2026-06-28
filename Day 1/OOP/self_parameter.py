@@ -7,4 +7,4 @@ class Student:
 
 std1 = Student()
 std1.boyName = "Muhammad"
-print(std1.getInfo())
+std1.getInfo()
