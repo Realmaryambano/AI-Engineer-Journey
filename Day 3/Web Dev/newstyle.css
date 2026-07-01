@@ -1,0 +1,14 @@
+table,span{
+    background-color: yellow;
+    color: blueviolet;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
