@@ -1,0 +1,21 @@
+#welcome{
+    color: red;
+}
+
+.bye{
+    background-color: orange;
+}
+
+.abc , .bye{
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(35, 168, 44);
+}
+
+#welcome1, .abc1, .blue {
+    color: rgb(255, 0, 204);
+}
+
+/* . is used for accessing class
+# is used for accessing id 
+Examples are hashtags on instagram*/
