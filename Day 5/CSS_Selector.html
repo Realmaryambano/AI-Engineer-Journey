@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* id selector  */
+        #blue{
+            background-color: green;
+        }
+        /* class selector */
+        .hehe{
+            color: darkred;
+        }
+        /* element selector */
+        h1{
+            background-color: blueviolet;
+        }
+        /* class selector  
+        div k andr ka paragraph. directly div k andr hi ho. esa na ho k div k andr article ho or uske andr paragraph ho.. phir ye property nhi lgegi*/
+        div > p{
+            font-weight: bolder;
+        }
+
+        /* descendant selector 
+        iska matlab bas div k  andr paragraph ho. bas div k andr ho. directly ya indirectly doesnt matters */
+        div p{
+            color: darksalmon;
+            background-color: aquamarine;
+        }
+
+        /* universal selector 
+        sab select hoty hein */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello world</h1>
+    </div>
+
+    <div id="blue">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, rerum.</p>
+    </div>
+
+    <div>
+        <h3>Hello dog</h3>
+        <ol>
+            <li>dog</li>
+            <li>cat</li>
+            <li class="hehe">horse</li>
+            <li>parrot</li>
+        </ol>
+        <article><p>Lorem ipsum dolor sit amet.</p>
+</article>
+    </div>
+</body>
+</html>
