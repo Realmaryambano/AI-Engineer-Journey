@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Lists</title>
     <style>
+        nav ul{
+            display: flex;
+        }
         nav ul li{
-            list-style:arabic-indic ;
+            padding: 23px;
+
+            /* list style none se 1.2.3.4 ya bullets show nhi hongy */
+            /* list-style: none; */
+            /* list-style:arabic-indic ; */
+            list-style-type: "💕";
             background-color: yellow;
             border: 2px solid black;
             /* isey jo 1,2,3,4 likha haina wo bhi list k andr hi include hoga ab */
             list-style-position: inside; 
-
+            /* list-style-image:  url("https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"); */
         }
     </style>
 </head>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid #661212;
+            /* display: inline; */
+            display: inline-block;
+            
+            margin: 30px;
+            padding: 30px;
+            background-color: orange;
+        }
+
+        .box1 {
+            /* box bhi gyb hojaiga or content bhi  */
+            /* display: none; */
+            /* sirf box gyb hoga uski space bchi rahegi */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+
+    <div class="box">also a nice box</div>
+
+    <span class="box">I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>
