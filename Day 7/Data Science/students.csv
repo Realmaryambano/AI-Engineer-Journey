@@ -1,0 +1,9 @@
+,Name,Age,Gender,Higher Education,Degree,Institute,Email,CGPA,Adult,Country
+1,Maya,23,Female,Bachelor,BSCS,Muhammad Ali Jinnah University,maya.edu@gmail.com,3.4,True,Pakistan
+2,Ankita,55,Female,PHD,Maths,IBA,ankita.edu@gmail.com,2.6,True,Pakistan
+3,Preet,64,Female,PHD,English,IBA,preet.edu@gmail.com,3.8,True,Pakistan
+4,Mubeen,14,Male,matric,Bio-Science,Aga Khan School,mubeen.edu.pk@gmail.com,3.9,False,Pakistan
+5,Maryam,32,Female,Masters,Economics,King Saud University,maryam.edu@gmail.com,4.0,True,Pakistan
+6,Sahil,20,Male,Undergrad,BBA,Habib University,sahil.edu@gmail.com,2.9,True,Pakistan
+7,Jaishwal,16,Male,Intermediate,ICS,Bahria College,jaishwal.edu@gmail.com,3.0,False,Pakistan
+8,Arohi,22,Female,Undergrad,BSIT,IOBM,arohi.edu.pk@gmail.com,3.5,True,Pakistan
