@@ -30,4 +30,16 @@ VALUES('Maya','Female','maya@gmail.com',DATE '2003-09-12');
 INSERT INTO FRIENDS(Name,Gender,Email,DOB)
 VALUES('Saim','Male','saim@gmail.com',DATE '2017-7-12');
 
+--Adding age Column
+ALTER TABLE Friends
+ADD AGE NUMBER
+
+UPDATE FRIENDS
+SET AGE = FLOOR(MONTHS_BETWEEN(SYSDATE,DOB)/12);
+COMMIT;
+
+--Floor Rounds the age down to the nearest whole number (removes decimals).
+--SYSDATE Returns the current system date.
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Mubeen','Male','mubeen@gmail.com',DATE '2021-02-14');
 
