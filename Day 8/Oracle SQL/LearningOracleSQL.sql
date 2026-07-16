@@ -115,3 +115,25 @@ group by age;
 
 SELECT dob,count(*) as Same_Birthdays from friends
 group by dob;
+
+commit;
+
+SELECT COUNT(*) AS Total_Friends
+FROM Friends;
+
+SELECT FLOOR(AVG(Age)) AS Average_Age
+FROM Friends;
+
+SELECT MAX(Age) AS Oldest
+FROM Friends;
+
+SELECT SUM(Age) AS Total_Age
+FROM Friends;
+
+
+SELECT *
+FROM Friends
+WHERE Age = (SELECT MAX(Age) FROM Friends);
+
+
+
