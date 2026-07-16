@@ -30,6 +30,8 @@ VALUES('Maya','Female','maya@gmail.com',DATE '2003-09-12');
 INSERT INTO FRIENDS(Name,Gender,Email,DOB)
 VALUES('Saim','Male','saim@gmail.com',DATE '2017-7-12');
 
+COMMIT;
+
 --Adding age Column
 ALTER TABLE Friends
 ADD AGE NUMBER
@@ -42,4 +44,20 @@ COMMIT;
 --SYSDATE Returns the current system date.
 INSERT INTO FRIENDS(Name,Gender,Email,DOB)
 VALUES('Mubeen','Male','mubeen@gmail.com',DATE '2021-02-14');
+
+--STARTING FROM M
+SELECT * FROM FRIENDS WHERE NAME LIKE 'M%';
+
+
+SELECT * FROM FRIENDS WHERE NAME LIKE '_____';
+
+SELECT * FROM FRIENDS WHERE NAME LIKE '_r%';
+
+
+SELECT * FROM FRIENDS WHERE NAME LIKE '_____';
+
+SELECT * FROM FRIENDS;
+
+ALTER TABLE FRIENDS
+ADD COUNTRY VARCHAR2(10);
 
