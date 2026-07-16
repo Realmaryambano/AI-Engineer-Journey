@@ -45,6 +45,9 @@ COMMIT;
 INSERT INTO FRIENDS(Name,Gender,Email,DOB)
 VALUES('Mubeen','Male','mubeen@gmail.com',DATE '2021-02-14');
 
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Murtasim','Male','murtasim@gmail.com',DATE '2021-02-14');
+
 --STARTING FROM M
 SELECT * FROM FRIENDS WHERE NAME LIKE 'M%';
 
@@ -67,7 +70,7 @@ WHERE ID = 1;
 
 UPDATE FRIENDS
 SET COUNTRY = 'IND'
-WHERE ID = 4;
+WHERE ID = 5;
 
 UPDATE FRIENDS
 SET COUNTRY = 'UK'
@@ -91,8 +94,24 @@ WHERE ID = 7;
 
 UPDATE FRIENDS
 SET COUNTRY = 'UAE'
-WHERE ID = 10;
+WHERE ID = 22;
 
 UPDATE FRIENDS
 SET COUNTRY = 'IND'
 WHERE ID = 11;
+
+
+SELECT COUNTRY,COUNT(*) AS PEOPLE_FROM FROM FRIENDS GROUP BY COUNTRY;
+
+
+--In most GROUP BY queries, the column you SELECT (that is not inside a group function) must also appear in GROUP BY.
+SELECT COLUMN_NAME1,
+COUNT(*) AS ANYNAME1
+FROM Friends
+GROUP BY COLUMN_NAME1;
+
+SELECT age,count(*) as Same_Age from friends
+group by age;
+
+SELECT dob,count(*) as Same_Birthdays from friends
+group by dob;
