@@ -11,5 +11,23 @@ SELECT * FROM FRIENDS;
 INSERT INTO FRIENDS(Name,Gender,Email,DOB)
 VALUES('Maryam','Female','maryam@gmail.com', DATE '2005-08-21');
 
-INSERT INTO FRIENDS()
-VALUES('Ayesha');
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Ayesha','Female','ayesha@gmail.com',DATE '2003-09-12');
+
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Areeba','Female','areeba@gmail.com',DATE '2006-03-12');
+
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Bilal','Male','bilal@gmail.com',DATE '2003-12-12');
+
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Muhammad','Male','muhammad@gmail.com',DATE '2009-6-16');
+
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Maya','Female','maya@gmail.com',DATE '2003-09-12');
+
+
+INSERT INTO FRIENDS(Name,Gender,Email,DOB)
+VALUES('Saim','Male','saim@gmail.com',DATE '2017-7-12');
+
+
