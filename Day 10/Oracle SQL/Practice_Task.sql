@@ -57,3 +57,7 @@ SELECT * FROM COURSE ORDER BY credit_hours;
 
 --Q17. Display departments ordered by department name alphabetically.
 SELECT * FROM DEPARTMENT ORDER BY department_name;
+
+SELECT MAX(DEPARTMENT_NAME) FROM DEPARTMENT;
+SELECT * FROM COURSE;
+SELECT DEPT_ID,credit_hours, MAX(SEMESTER),MIN(SEMESTER),COUNT(SEMESTER) FROM COURSE GROUP BY DEPT_ID, credit_hours
