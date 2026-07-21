@@ -1,0 +1,107 @@
+--📝 Practice Question: University Database
+
+--You have been asked to create a database for a University Management System.
+--You need to create 3 tables:
+--1. Department Table
+--
+--Create a table to store information about university departments.
+--
+--Column	Data Type	Description
+--Department ID	NUMBER	Unique ID of department
+--Department Name	VARCHAR2(100)	Name of department
+--HOD Name	VARCHAR2(100)	Name of Head of Department
+--Building	VARCHAR2(50)	Department building
+--Contact Number	VARCHAR2(20)	Department contact
+
+--Rule: Phone numbers → VARCHAR2 ✅
+--Numbers used for calculations → NUMBER ✅
+
+CREATE TABLE DEPARTMENT(
+DEPARTMENT_ID NUMBER PRIMARY KEY,
+DEPARTMENT_NAME VARCHAR2(100),
+HOD_NAME VARCHAR2(100),
+BUILDING VARCHAR2(50),
+CONTACT_NUMBER VARCHAR2(20));
+
+--
+--Rows to insert:
+--
+--Computer Science — Dr. Ahmed Khan — Block A — 03001234567
+--Software Engineering — Dr. Sara Ali — Block B — 03002345678
+--Data Science — Dr. Usman Raza — Block C — 03003456789
+--Artificial Intelligence — Dr. Hina Malik — Block D — 03004567890
+--Information Technology — Dr. Bilal Ahmed — Block E — 03005678901
+
+
+
+--2. Student Table
+--
+--Create a table to store information about students.
+--
+--Column	Data Type	Description
+--Student ID	NUMBER	Unique ID of student
+--Student Name	VARCHAR2(100)	Full name
+--Email	VARCHAR2(100)	Student email
+--Gender	VARCHAR2(10)	Male/Female
+--Date of Birth	DATE	Student birth date
+--Phone Number	VARCHAR2(20)	Student phone
+--Department ID	NUMBER	Department of student
+--Admission Year	NUMBER(4)	Year student was admitted
+--
+--Rows to insert:
+--
+--Maryam Bano — maryam@gmail.com — Female — 21-Aug-2002 — 03111234567 — Computer Science — 2023
+--Ali Ahmed — ali@gmail.com — Male — 12-May-2003 — 03221234567 — Computer Science — 2022
+--Sara Khan — sara@gmail.com — Female — 15-Nov-2002 — 03331234567 — Software Engineering — 2023
+--Hassan Raza — hassan@gmail.com — Male — 20-Mar-2001 — 03441234567 — Data Science — 2021
+--Ayesha Malik — ayesha@gmail.com — Female — 10-Jul-2003 — 03551234567 — Information Technology — 2023
+--Usman Tariq — usman@gmail.com — Male — 25-Sep-2002 — 03661234567 — Artificial Intelligence — 2022
+--
+--Hint: Department ID should be a Foreign Key referencing the Department table.
+--
+--3. Course Table
+--
+--Create a table to store information about university courses.
+--
+--Column	Data Type	Description
+--Course ID	NUMBER	Unique course ID
+--Course Name	VARCHAR2(100)	Name of course
+--Credit Hours	NUMBER(2)	Course credit hours
+--Semester	NUMBER(2)	Semester in which course is offered
+--Department ID	NUMBER	Department offering the course
+--
+--Rows to insert:
+--
+--Database Management Systems — 3 — Semester 4 — Computer Science
+--Data Structures and Algorithms — 3 — Semester 3 — Computer Science
+--Web Engineering — 3 — Semester 5 — Software Engineering
+--Machine Learning — 3 — Semester 6 — Data Science
+--Cloud Computing — 3 — Semester 7 — Information Technology
+--Artificial Intelligence — 3 — Semester 6 — Artificial Intelligence
+--Software Project Management — 3 — Semester 7 — Software Engineering
+--Big Data Analytics — 3 — Semester 7 — Data Science
+--Cyber Security — 3 — Semester 5 — Information Technology
+--Deep Learning — 3 — Semester 8 — Artificial Intelligence
+--
+--Hint: Department ID should be a Foreign Key referencing the Department table.
+--
+--🎯 Your Task
+--
+--Try to write the Oracle SQL yourself in this order:
+--
+--Step 1: CREATE TABLE Departments
+--
+--Step 2: CREATE TABLE Students
+--
+--Step 3: CREATE TABLE Courses
+--
+--Step 4: Add Primary Keys
+--
+--Step 5: Add Foreign Keys
+--
+--Step 6: INSERT INTO all the rows
+--
+--Step 7: Use SELECT * FROM to display the tables.
+--
+--Important beginner tip: Create the Departments table first because Students and Courses depend on it through the Foreign Key.
+
