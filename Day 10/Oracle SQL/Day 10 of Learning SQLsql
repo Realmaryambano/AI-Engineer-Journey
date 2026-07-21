@@ -117,21 +117,27 @@ INSERT INTO Students VALUES
 TO_DATE('2002-09-25', 'YYYY-MM-DD'), '03661234567', 105, 2022);
 COMMIT;
 
+--EMPTY VALUE OF DOB
 UPDATE STUDENTS
 SET DATE_OF_BIRTH = NULL;
 
+-- ALL ROWS DELETE
+DELETE FROM STUDENTS;
 
 --3. Course Table
---
---Create a table to store information about university courses.
---
 --Column	Data Type	Description
 --Course ID	NUMBER	Unique course ID
 --Course Name	VARCHAR2(100)	Name of course
 --Credit Hours	NUMBER(2)	Course credit hours
 --Semester	NUMBER(2)	Semester in which course is offered
 --Department ID	NUMBER	Department offering the course
---
+
+CREATE TABLE COURSE(
+COURSE_ID,
+COURSE_NAME,
+CREDIT_HOURS,
+SEMESTER_NUMBER,
+DEPT_ID);
 --Rows to insert:
 --
 --Database Management Systems — 3 — Semester 4 — Computer Science
@@ -146,24 +152,4 @@ SET DATE_OF_BIRTH = NULL;
 --Deep Learning — 3 — Semester 8 — Artificial Intelligence
 --
 --Hint: Department ID should be a Foreign Key referencing the Department table.
---
---🎯 Your Task
---
---Try to write the Oracle SQL yourself in this order:
---
---Step 1: CREATE TABLE Departments
---
---Step 2: CREATE TABLE Students
---
---Step 3: CREATE TABLE Courses
---
---Step 4: Add Primary Keys
---
---Step 5: Add Foreign Keys
---
---Step 6: INSERT INTO all the rows
---
---Step 7: Use SELECT * FROM to display the tables.
---
---Important beginner tip: Create the Departments table first because Students and Courses depend on it through the Foreign Key.
 
