@@ -29,3 +29,16 @@ SELECT DISTINCT admission_year FROM STUDENTS;
 --Q8. Display the unique semester numbers from the COURSE table.
 SELECT DISTINCT SEMESTER FROM COURSE ORDER BY SEMESTER;
 
+
+
+--🟢 LEVEL 3 — WHERE
+--Q9. Display students whose DEPARTMENT_ID is 101.
+SELECT * FROM STUDENTS WHERE department_id = 101;
+--Q10. Display students who were admitted in 2023.
+SELECT * FROM STUDENTS WHERE admission_year = 2023;
+--Q11. Display courses having 3 credit hours.
+SELECT * FROM COURSE WHERE credit_hours = 3;
+--Q12. Display courses offered in semester 6.
+SELECT * FROM COURSE WHERE semester = 6;
+--Q13. Display departments located in Block A.
+SELECT * FROM department WHERE BUILDING = 'Block A'
