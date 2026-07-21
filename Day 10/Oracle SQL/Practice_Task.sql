@@ -60,4 +60,29 @@ SELECT * FROM DEPARTMENT ORDER BY department_name;
 
 SELECT MAX(DEPARTMENT_NAME) FROM DEPARTMENT;
 SELECT * FROM COURSE;
-SELECT DEPT_ID,credit_hours, MAX(SEMESTER),MIN(SEMESTER),COUNT(SEMESTER) FROM COURSE GROUP BY DEPT_ID, credit_hours
+SELECT DEPT_ID,credit_hours, MAX(SEMESTER),MIN(SEMESTER),COUNT(SEMESTER) FROM COURSE GROUP BY DEPT_ID, credit_hours;
+
+
+
+
+
+--🟡 LEVEL 5 — UPDATE
+--Q18. Change Maryam's email address to maryam.bano@gmail.com.
+UPDATE STUDENTS
+SET EMAIL = 'maryam.bano@gmail.com'
+where student_id = 1;
+
+--Q19. Change the building of the Data Science department from Block A to Block C.
+UPDATE  DEPARTMENT
+set building = 'Block C'
+where department_name = 'Data Science';
+
+--Q20. Change the credit hours of Deep Learning from 3 to 4.
+SELECT * FROM COURSE;
+UPDATE COURSE
+SET credit_hours = 4
+WHERE COURSE_NAME = 'Deep Learning';
+--Q21. Change the semester of Web Engineering from 5 to 6.
+UPDATE COURSE
+SET credit_hours = 4
+WHERE COURSE_NAME = 'Deep Learning';
