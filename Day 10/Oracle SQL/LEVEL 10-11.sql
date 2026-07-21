@@ -21,10 +21,13 @@ SELECT * FROM course;
 --🔴 LEVEL 11 — OPERATIONS
 --
 --Q44. Display each course's credit hours multiplied by 2.
---
+SELECT credit_hours*2 as query FROM course;
+
 --Q45. Display each course's credit hours plus 1.
---
+SELECT credit_hours+1 as query FROM course;
+
 --Q46. Display the semester number plus 1 for each course.
---
+SELECT semester+1 as query FROM course;
+
 --Q47. Display the admission year plus 4 for each student.
---
+SELECT admission_year+4 as query FROM students;
