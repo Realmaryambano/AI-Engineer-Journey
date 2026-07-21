@@ -74,9 +74,7 @@ CREATE TABLE Students (
     Department_ID NUMBER,
     Admission_Year NUMBER(4),
 
-    CONSTRAINT fk_student_department
-    FOREIGN KEY (Department_ID)
-    REFERENCES Department(Department_ID)
+    CONSTRAINT fk_student_department FOREIGN KEY (Department_ID) REFERENCES Department(Department_ID)
 );
 -- DELETING TABLE
 DROP TABLE STUDENTS;
@@ -133,11 +131,15 @@ DELETE FROM STUDENTS;
 --Department ID	NUMBER	Department offering the course
 
 CREATE TABLE COURSE(
-COURSE_ID,
-COURSE_NAME,
-CREDIT_HOURS,
-SEMESTER_NUMBER,
-DEPT_ID);
+COURSE_ID Number PRIMARY KEY,
+COURSE_NAME VARCHAR2(100),
+CREDIT_HOURS NUMBER(2),
+SEMESTER NUMBER(2) ,
+DEPT_ID NUMBER,
+CONSTRAINT COURSE_DEPT FOREIGN KEY(DEPT_ID) REFERENCES DEPARTMENT(DEPARTMENT_ID)
+);
+
+SELECT * FROM COURSE;
 --Rows to insert:
 --
 --Database Management Systems — 3 — Semester 4 — Computer Science
