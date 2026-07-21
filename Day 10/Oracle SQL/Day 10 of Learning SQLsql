@@ -154,4 +154,35 @@ SELECT * FROM COURSE;
 --Deep Learning — 3 — Semester 8 — Artificial Intelligence
 --
 --Hint: Department ID should be a Foreign Key referencing the Department table.
+INSERT INTO COURSE VALUES
+(201, 'Database Management Systems', 3, 4, 101);
 
+INSERT INTO COURSE VALUES
+(202, 'Data Structures and Algorithms', 3, 3, 101);
+
+INSERT INTO COURSE VALUES
+(203, 'Web Engineering', 3, 5, 102);
+
+INSERT INTO COURSE VALUES
+(204, 'Machine Learning', 3, 6, 103);
+
+INSERT INTO COURSE VALUES
+(205, 'Cloud Computing', 3, 7, 104);
+
+INSERT INTO COURSE VALUES
+(206, 'Artificial Intelligence', 3, 6, 105);
+
+INSERT INTO COURSE VALUES
+(207, 'Software Project Management', 3, 7, 102);
+
+INSERT INTO COURSE VALUES
+(208, 'Big Data Analytics', 3, 7, 103);
+
+INSERT INTO COURSE VALUES
+(209, 'Cyber Security', 3, 5, 104);
+
+INSERT INTO COURSE VALUES
+(210, 'Deep Learning', 3, 8, 105);
+
+COMMIT;
+SELECT * FROM COURSE;
