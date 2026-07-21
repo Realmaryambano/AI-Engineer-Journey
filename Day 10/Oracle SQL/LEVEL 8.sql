@@ -1,0 +1,13 @@
+
+--🟠 LEVEL 8 — ALTER TABLE
+--
+--Q29. Add a new column EMAIL to the DEPARTMENT table with datatype VARCHAR2(100).
+--
+--Q30. Add a new column ROOM_NUMBER to the COURSE table with datatype NUMBER.
+--
+--Q31. Add a new column ADDRESS to the STUDENTS table with datatype VARCHAR2(200).
+--
+--Q32. Remove the ROOM_NUMBER column from the COURSE table.
+--
+--Q33. Remove the ADDRESS column from the STUDENTS table.
+--
