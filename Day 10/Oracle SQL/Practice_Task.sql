@@ -41,4 +41,19 @@ SELECT * FROM COURSE WHERE credit_hours = 3;
 --Q12. Display courses offered in semester 6.
 SELECT * FROM COURSE WHERE semester = 6;
 --Q13. Display departments located in Block A.
-SELECT * FROM department WHERE BUILDING = 'Block A'
+SELECT * FROM department WHERE BUILDING = 'Block A';
+
+
+
+--🟡 LEVEL 4 — ORDER BY
+--Q14. Display students ordered by their names in ascending order.
+SELECT * FROM STUDENTS ORDER BY STUDENT_NAME ASC;
+
+--Q15. Display students ordered by their admission year in descending order.
+SELECT * FROM STUDENTS ORDER BY admission_year DESC;
+
+--Q16. Display courses ordered by credit hours.
+SELECT * FROM COURSE ORDER BY credit_hours;
+
+--Q17. Display departments ordered by department name alphabetically.
+SELECT * FROM DEPARTMENT ORDER BY department_name;
