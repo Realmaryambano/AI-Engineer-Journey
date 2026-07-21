@@ -1,0 +1,22 @@
+--⭐ FINAL CHALLENGE
+--
+--Try to answer these without looking at previous examples:
+--
+--Q48. Display the names of all students from the Computer Science department using WHERE.
+--
+--Q49. Display all courses from the Data Science department and sort them by course name.
+--
+--Q50. Find all students whose name starts with A and who were admitted in 2023.
+--
+--Q51. Update the HOD of Artificial Intelligence to Dr. Ali Hassan.
+--
+--Q52. Find all courses that contain the word Management.
+--
+--Q53. Display department name and building together using concatenation.
+--
+--Q54. Find all unique semesters from the Course table and display them in descending order.
+--
+--Q55. Add a FEE column to the COURSE table with datatype NUMBER(8,2), then insert/update fees for courses.
+--
+--My recommendation for you:
+--

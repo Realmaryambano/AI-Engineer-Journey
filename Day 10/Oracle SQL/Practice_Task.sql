@@ -78,11 +78,11 @@ set building = 'Block C'
 where department_name = 'Data Science';
 
 --Q20. Change the credit hours of Deep Learning from 3 to 4.
-SELECT * FROM COURSE;
 UPDATE COURSE
 SET credit_hours = 4
 WHERE COURSE_NAME = 'Deep Learning';
+
 --Q21. Change the semester of Web Engineering from 5 to 6.
 UPDATE COURSE
-SET credit_hours = 4
-WHERE COURSE_NAME = 'Deep Learning';
+SET semester = 6
+WHERE COURSE_NAME = 'Web Engineering';
