@@ -63,7 +63,24 @@ SELECT * FROM DEPARTMENT;
 --Phone Number	VARCHAR2(20)	Student phone
 --Department ID	NUMBER	Department of student
 --Admission Year	NUMBER(4)	Year student was admitted
---
+
+CREATE TABLE Students (
+    Student_ID NUMBER PRIMARY KEY,
+    Student_Name VARCHAR2(100) NOT NULL,
+    Email VARCHAR2(100) UNIQUE,
+    Gender VARCHAR2(10),
+    Date_of_Birth DATE,
+    Phone_Number VARCHAR2(20),
+    Department_ID NUMBER,
+    Admission_Year NUMBER(4),
+
+    CONSTRAINT fk_student_department
+    FOREIGN KEY (Department_ID)
+    REFERENCES Department(Department_ID)
+);
+-- DELETING TABLE
+DROP TABLE STUDENTS;
+SELECT * FROM STUDENTS;
 --Rows to insert:
 --
 --Maryam Bano — maryam@gmail.com — Female — 21-Aug-2002 — 03111234567 — Computer Science — 2023
@@ -75,6 +92,35 @@ SELECT * FROM DEPARTMENT;
 --
 --Hint: Department ID should be a Foreign Key referencing the Department table.
 --
+INSERT INTO Students VALUES
+(1, 'Maryam Bano', 'maryam@example.com', 'Female',
+TO_DATE('2002-08-21', 'YYYY-MM-DD'), '03111234567', 101, 2023);
+
+INSERT INTO Students VALUES
+(2, 'Ali Ahmed', 'ali@example.com', 'Male',
+TO_DATE('2003-05-12', 'YYYY-MM-DD'), '03221234567', 101, 2022);
+
+INSERT INTO Students VALUES
+(3, 'Sara Khan', 'sara@example.com', 'Female',
+TO_DATE('2002-11-15', 'YYYY-MM-DD'), '03331234567', 102, 2023);
+
+INSERT INTO Students VALUES
+(4, 'Hassan Raza', 'hassan@example.com', 'Male',
+TO_DATE('2001-03-20', 'YYYY-MM-DD'), '03441234567', 103, 2021);
+
+INSERT INTO Students VALUES
+(5, 'Ayesha Malik', 'ayesha@example.com', 'Female',
+TO_DATE('2003-07-10', 'YYYY-MM-DD'), '03551234567', 104, 2023);
+
+INSERT INTO Students VALUES
+(6, 'Usman Tariq', 'usman@example.com', 'Male',
+TO_DATE('2002-09-25', 'YYYY-MM-DD'), '03661234567', 105, 2022);
+COMMIT;
+
+UPDATE STUDENTS
+SET DATE_OF_BIRTH = NULL;
+
+
 --3. Course Table
 --
 --Create a table to store information about university courses.
