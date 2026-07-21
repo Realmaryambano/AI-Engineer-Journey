@@ -32,8 +32,24 @@ CONTACT_NUMBER VARCHAR2(20));
 --Artificial Intelligence — Dr. Hina Malik — Block D — 03004567890
 --Information Technology — Dr. Bilal Ahmed — Block E — 03005678901
 
+INSERT INTO DEPARTMENT VALUES(
+101,'Computer Science','Dr. Ahmed Khan','Block A','03001234567');
 
+INSERT INTO DEPARTMENT VALUES(
+102,'Software Engineering','Dr. Sara Ali','Block B','03002345678');
 
+INSERT INTO DEPARTMENT VALUES(
+103,'Data Science','Dr. Usman Raza','Block A','03003456789');
+
+INSERT INTO DEPARTMENT VALUES(
+104,'Artificial Intelligence','Dr. Hina Malik','Block B','03004567890');
+
+INSERT INTO DEPARTMENT VALUES(
+105,'Information Technology','Dr. Bilal Ahmed','Block A','03005678901');
+
+COMMIT;
+
+SELECT * FROM DEPARTMENT;
 --2. Student Table
 --
 --Create a table to store information about students.
