@@ -1,70 +1,91 @@
---🔴 10 Nested Query Practice Questions
---Q1.
+--🔴 Nested Query Practice Questions
+SELECT * FROM STUDENTS;
+SELECT * FROM DEPARTMENT;
+SELECT * FROM COURSE;
+
+--Q1. Find all students who belong to the same department as Maryam Bano, but do not display Maryam Bano herself.
+SELECT * FROM STUDENTS WHERE DEPARTMENT_ID = 
+(SELECT DEPARTMENT_ID FROM STUDENTS WHERE STUDENT_NAME = 'Maryam Bano') and STUDENT_NAME <> 'Maryam Bano';
+
+--Q2. Above Average Credit Hours
 --
---Find all students who belong to the same department as Ali Ahmed.
+--Find all courses whose CREDIT_HOURS are greater than the average credit hours of all courses.
 --
---Q2.
+--Display:
 --
---Find all courses offered by the same department as Maryam Bano's department.
+--COURSE_ID
+--COURSE_NAME
+--CREDIT_HOURS
+--Q3. Students in the Department with the Most Courses
 --
---Q3.
+--Find all students who belong to the department that offers the highest number of courses.
 --
---Display the name of the department where Hassan Raza studies.
+--Display:
 --
---Q4.
+--STUDENT_NAME
+--DEPARTMENT_ID
+--Q4. Courses from the Largest Department
 --
---Find all students who belong to the department that offers 'Big Data Analytics'.
+--Find all courses offered by the department that has the highest number of students.
 --
---Q5.
+--Display:
 --
---Find the department name of the department that offers 'Deep Learning'.
+--COURSE_NAME
+--CREDIT_HOURS
+--DEPT_ID
+--Q5. Students Studying in a Department Offering a Course Above Average
 --
---Q6.
+--Find all students whose department offers at least one course whose credit hours are greater than the average credit hours of all courses.
 --
---Find all courses offered by the department where Ayesha Malik studies.
+--Display:
 --
---Q7.
+--STUDENT_NAME
+--DEPARTMENT_ID
+--Q6. Department with the Highest Student Count
 --
---Find all students who belong to the department that offers 'Web Engineering'.
+--Find the department name of the department that has the highest number of students.
 --
---Q8.
+--Display only:
 --
---Find the HOD name of the department where Sara Khan studies.
+--DEPARTMENT_NAME
+--Q7. Courses Offered by Departments with Multiple Students
 --
---Q9.
+--Find all courses whose department has more than one student enrolled in that department.
 --
---Find all courses offered by the same department as the course 'Machine Learning'.
+--Display:
 --
---Q10. ⭐ Challenge
+--COURSE_NAME
+--DEPT_ID
+--Q8. Students from Departments Offering Multiple Courses
 --
---Display the name of the department where the student 'Usman Tariq' studies, but do not directly use DEPARTMENT_ID in your query.
+--Find all students who belong to departments that offer more than one course.
 --
---🎯 Rules for this practice
+--Display:
 --
---Try to solve all 10 using the pattern you have learned:
+--STUDENT_NAME
+--DEPARTMENT_ID
+--Q9. Hardest: Above the Average of Their Department
 --
---SELECT ...
---FROM ...
---WHERE column = (
---    SELECT ...
---    FROM ...
---    WHERE ...
---);
+--Find all courses whose CREDIT_HOURS are greater than the average credit hours of courses offered by their own department.
 --
---For example, depending on the question, your thinking process might be:
+--Display:
 --
---Student → Department ID → Department
+--COURSE_NAME
+--CREDIT_HOURS
+--DEPT_ID
 --
---or
+--⚠️ The average must be calculated based on the course's department, not the overall average of all courses.
 --
---Course → Department ID → Department
+--Q10. 🔥 FINAL BOSS — Nested Subquery Challenge
 --
---or
+--Find the names of students who belong to the department that:
 --
---Student → Department ID → Course
+--Has more students than the average number of students per department, AND
+--Offers more courses than the average number of courses per department.
 --
---⚠️ Important
+--Display:
 --
---For Q9, the inner query should find the DEPT_ID of Machine Learning, and the outer query should use that result to find other courses.
+--STUDENT_NAME
+--DEPARTMENT_ID
 --
---Try Q1–Q10 without looking at your previous answers. This will be a good test of whether you genuinely understand nested queries rather than just memorizing the syntax.
+--This is your hardest one because you need to reason about students → departments → course counts, while comparing grouped results against averages.
