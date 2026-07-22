@@ -1,25 +1,87 @@
+CREATE TABLE COUNTRIES (
+    COUNTRY_ID NUMBER PRIMARY KEY,
+    COUNTRY_NAME VARCHAR2(50) NOT NULL,
+    CONTINENT VARCHAR2(50),
+    LANGUAGE VARCHAR2(50)
+);
+INSERT INTO COUNTRIES VALUES
+(1, 'Pakistan', 'Asia', 'Urdu');
+
+INSERT INTO COUNTRIES VALUES
+(2, 'USA', 'North America', 'English');
+
+INSERT INTO COUNTRIES VALUES
+(3, 'Spain', 'Europe', 'Spanish');
+
+INSERT INTO COUNTRIES VALUES
+(4, 'UAE', 'Asia', 'Arabic');
+
+INSERT INTO COUNTRIES VALUES
+(5, 'UK', 'Europe', 'English');
+
+
 CREATE TABLE USERS (
     USER_ID NUMBER PRIMARY KEY,
     USER_NAME VARCHAR2(50) NOT NULL,
     EMAIL VARCHAR2(100) UNIQUE,
-    COUNTRY VARCHAR2(50),
-    SUBSCRIPTION_TYPE VARCHAR2(20)
+    COUNTRY_ID NUMBER,
+    SUBSCRIPTION_TYPE VARCHAR2(20),
+
+    CONSTRAINT FK_USER_COUNTRY
+    FOREIGN KEY (COUNTRY_ID)
+    REFERENCES COUNTRIES(COUNTRY_ID)
 );
-INSERT INTO USERS VALUES
-(1, 'Maryam', 'maryam@gmail.com', 'Pakistan', 'Premium');
 
 INSERT INTO USERS VALUES
-(2, 'Ayesha', 'ayesha@gmail.com', 'Pakistan', 'Basic');
+(1, 'Maryam', 'maryam@gmail.com', 1, 'Premium');
 
 INSERT INTO USERS VALUES
-(3, 'John', 'john@gmail.com', 'USA', 'Premium');
+(2, 'Ayesha', 'ayesha@gmail.com', 1, 'Basic');
 
 INSERT INTO USERS VALUES
-(4, 'Sofia', 'sofia@gmail.com', 'Spain', 'Standard');
+(3, 'John', 'john@gmail.com', 2, 'Premium');
 
 INSERT INTO USERS VALUES
-(5, 'Ali', 'ali@gmail.com', 'UAE', 'Premium');
+(4, 'Sofia', 'sofia@gmail.com', 3, 'Standard');
 
 INSERT INTO USERS VALUES
-(6, 'Emma', 'emma@gmail.com', 'UK', 'Basic');
+(5, 'Ali', 'ali@gmail.com', 4, 'Premium');
 
+INSERT INTO USERS VALUES
+(6, 'Emma', 'emma@gmail.com', 5, 'Basic');
+
+CREATE TABLE WATCH_HISTORY (
+    WATCH_ID NUMBER PRIMARY KEY,
+    USER_ID NUMBER,
+    COUNTRY_ID NUMBER,
+    MOVIE_NAME VARCHAR2(100),
+    GENRE VARCHAR2(50),
+    WATCH_DATE DATE,
+    WATCH_DURATION NUMBER,
+
+    CONSTRAINT FK_WATCH_USER
+    FOREIGN KEY (USER_ID)
+    REFERENCES USERS(USER_ID),
+
+    CONSTRAINT FK_WATCH_COUNTRY
+    FOREIGN KEY (COUNTRY_ID)
+    REFERENCES COUNTRIES(COUNTRY_ID)
+);
+
+INSERT INTO WATCH_HISTORY VALUES
+(101, 1, 1, 'Inception', 'Sci-Fi', DATE '2026-07-01', 120);
+
+INSERT INTO WATCH_HISTORY VALUES
+(102, 1, 1, 'Interstellar', 'Sci-Fi', DATE '2026-07-02', 169);
+
+INSERT INTO WATCH_HISTORY VALUES
+(103, 2, 1, 'Titanic', 'Romance', DATE '2026-07-03', 195);
+
+INSERT INTO WATCH_HISTORY VALUES
+(104, 3, 2, 'The Dark Knight', 'Action', DATE '2026-07-04', 152);
+
+INSERT INTO WATCH_HISTORY VALUES
+(105, 4, 3, 'Parasite', 'Thriller', DATE '2026-07-05', 132);
+
+INSERT INTO WATCH_HISTORY VALUES
+(106, 5, 4, 'Coco', 'Animation', DATE '2026-07-06', 105);
