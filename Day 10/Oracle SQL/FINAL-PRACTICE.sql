@@ -2,7 +2,7 @@
 --
 --Try to answer these without looking at previous examples:
 --Q48. Display the names of all students from the Computer Science department using WHERE.
-SELECT * FROM Students where department_id = 101;
+SELECT student_name FROM Students where department_id = 101;
 
 --Q49. Display all courses from the Data Science department and sort them by course name.
 SELECT * FROM COURSE where dept_id = 103 order by course_name;
@@ -13,7 +13,7 @@ SELECT * FROM STUDENTs where student_name like 'A%' AND ADMISSION_YEAR = 2023 ;
 SELECT * FROM DEPARTMENT;
 UPDATE DEPARTMENT
 SET HOD_NAME = 'Dr. Ali Hassan'
-WHERE DEPARTMENT_ID = 104;
+WHERE DEPARTMENT_NAME = 'Artificial Intelligence';
 
 --Q52. Find all courses that contain the word Management.
 SELECT * FROM COURSE where course_name like '%Management%';
@@ -32,3 +32,15 @@ SELECT * FROM COURSE;
 UPDATE COURSE
 SET FEE = 8000
 WHERE course_id = 201;
+
+UPDATE COURSE
+SET FEE = 7500
+WHERE COURSE_ID = 202;
+
+UPDATE COURSE
+SET FEE = 9000
+WHERE COURSE_ID = 203;
+
+UPDATE COURSE
+SET FEE = 8500
+WHERE COURSE_ID = 204;
