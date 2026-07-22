@@ -14,25 +14,20 @@ SELECT COURSE_ID,COURSE_NAME,CREDIT_HOURS FROM COURSE WHERE CREDIT_HOURS >
 
 --Q3.Find all students who belong to the department that offers the highest number of courses.
 --Display: STUDENT_NAME, DEPARTMENT_ID
-SELECT STUDENT_NAME, DEPARTMENT_ID
-FROM STUDENTS
-WHERE DEPARTMENT_ID in (
-    SELECT DEPT_ID
-    FROM COURSE
-    GROUP BY DEPT_ID
-    HAVING COUNT(*) = (
-        SELECT MAX(COUNT(*))
-        FROM COURSE
-        GROUP BY DEPT_ID
-    )
-);
+SELECT * FROM STUDENTS WHERE DEPARTMENT_ID IN (
+SELECT DEPT_ID FROM COURSE GROUP BY DEPT_ID HAVING COUNT(*) = (
+SELECT MAX(COUNT(*)) FROM COURSE GROUP BY DEPT_ID));
 
 --Q4.Find all courses offered by the department that has the highest number of students.
 --Display:COURSE_NAME, CREDIT_HOURS, DEPT_ID
+SELECT COURSE_NAME, CREDIT_HOURS, DEPT_ID FROM COURSE WHERE DEPT_ID IN (
+SELECT DEPARTMENT_ID FROM STUDENTS GROUP BY DEPARTMENT_ID HAVING COUNT(*) =
+(SELECT MAX(COUNT(*)) FROM STUDENTS GROUP BY DEPARTMENT_ID));
 
 --Q5. Find all students whose department offers at least one course whose credit
 --hours are greater than the average credit hours of all courses.
 --Display: STUDENT_NAME, DEPARTMENT_ID
+
 
 
 --Q6. Department with the Highest Student Count
