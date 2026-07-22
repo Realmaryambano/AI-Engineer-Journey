@@ -25,3 +25,9 @@ select lpad('maryam',10,'@');
 
 -- write a quesry to display data in format maryam@@@@
 select rpad('maryam',10,'@');
+
+--Rounds a number to the 2 decimal places
+select round(33.7693,2);
+
+--Truncates (cuts off) to 1 extra decimal places.. means only 1 will remain
+select trunc(33.7959993,1);
