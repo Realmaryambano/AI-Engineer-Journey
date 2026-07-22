@@ -1,0 +1,70 @@
+--🔴 10 Nested Query Practice Questions
+--Q1.
+--
+--Find all students who belong to the same department as Ali Ahmed.
+--
+--Q2.
+--
+--Find all courses offered by the same department as Maryam Bano's department.
+--
+--Q3.
+--
+--Display the name of the department where Hassan Raza studies.
+--
+--Q4.
+--
+--Find all students who belong to the department that offers 'Big Data Analytics'.
+--
+--Q5.
+--
+--Find the department name of the department that offers 'Deep Learning'.
+--
+--Q6.
+--
+--Find all courses offered by the department where Ayesha Malik studies.
+--
+--Q7.
+--
+--Find all students who belong to the department that offers 'Web Engineering'.
+--
+--Q8.
+--
+--Find the HOD name of the department where Sara Khan studies.
+--
+--Q9.
+--
+--Find all courses offered by the same department as the course 'Machine Learning'.
+--
+--Q10. ⭐ Challenge
+--
+--Display the name of the department where the student 'Usman Tariq' studies, but do not directly use DEPARTMENT_ID in your query.
+--
+--🎯 Rules for this practice
+--
+--Try to solve all 10 using the pattern you have learned:
+--
+--SELECT ...
+--FROM ...
+--WHERE column = (
+--    SELECT ...
+--    FROM ...
+--    WHERE ...
+--);
+--
+--For example, depending on the question, your thinking process might be:
+--
+--Student → Department ID → Department
+--
+--or
+--
+--Course → Department ID → Department
+--
+--or
+--
+--Student → Department ID → Course
+--
+--⚠️ Important
+--
+--For Q9, the inner query should find the DEPT_ID of Machine Learning, and the outer query should use that result to find other courses.
+--
+--Try Q1–Q10 without looking at your previous answers. This will be a good test of whether you genuinely understand nested queries rather than just memorizing the syntax.
