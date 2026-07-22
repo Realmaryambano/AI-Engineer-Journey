@@ -31,3 +31,21 @@ select round(33.7693,2);
 
 --Truncates (cuts off) to 1 extra decimal places.. means only 1 will remain
 select trunc(33.7959993,1);
+
+-- find mod
+select mod(63,5);
+
+-- display number of months between 12-dec-2018 and 12-march-2018
+select months_between('12-DEC-2018','12-MARCH-2018');
+select months_between('12-MARCH-2018','12-DEC-2018'); -- BIG DATE FIRST OR ELSE WRONG ANSWER
+
+-- ADD 9 MONTHS IN 12 DEC 2018
+SELECT ADD_MONTHS('12-MARCH-2018',9);
+SELECT ADD_MONTHS('12-DEC-2018',-9); 
+
+-- WRITE A QUERY TO FIND THE DATE OF THE NEXT FRIDAY AFTER 22-07-2026
+SELECT NEXT_DAY('22-JULY-2026','SATURDAY');
+
+-- USE NULLIF ARGUMENT
+SELECT NULLIF(100,100);
+SELECT NULLIF(1000,100);
